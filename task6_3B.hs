@@ -13,3 +13,6 @@ main = do
     let sentence3 = "1 2 3"
     print $ isThreeWords sentence3
     return ()
+--- False
+---False
+---True

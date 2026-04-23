@@ -13,7 +13,15 @@ isProductOfThreeThreeDigitNumbers n
                     [100..min 999 n] --- Проверяем все трёхзначные числа в качестве первого множителя, затем для каждого такого 
      ---множителя проверяем второй множитель, и если он подходит, проверяем третий множитель.
 
+main :: IO ()
 main = do
     let number = 123456789 -- Пример числа для проверки
     print $ isProductOfThreeThreeDigitNumbers number
+    let number2 = 0 -- Пример числа для проверки
+    print $ isProductOfThreeThreeDigitNumbers number2
+    let number3 = 1000000 -- Пример числа для проверки
+    print $ isProductOfThreeThreeDigitNumbers number3
     return ()
+---False
+---False
+---True
